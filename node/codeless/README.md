@@ -1,6 +1,14 @@
-# node
+# otel-sdk-examples-node-codeless
 
-Set the following environments for the container. This can be done on the Container App or hardcoding (not recommended) it somewhere like in the `Dockerfile`:
+**Local development**:
+1. Build and run the image
+2. When running the container, pass the following environments variables to it so otel telemetry logs, traces, metrics, are logged to the console:
+- `NODE_OPTIONS`: `--require @opentelemetry/auto-instrumentations-node/register`
+- `OTEL_TRACES_EXPORTER`: `console`
+
+**Production / deploying to Container Apps**:
+1. Build the image - deploy this to a container registry like Azure Container Registry
+2. When running the container, pass  the following environments for the container. This can be done on the Container App or hardcoding (not recommended) it somewhere like in the `Dockerfile`:
 - `NODE_OPTIONS`: `--require @opentelemetry/auto-instrumentations-node/register`
 - `OTEL_TRACES_EXPORTER`: `otlp`
 
