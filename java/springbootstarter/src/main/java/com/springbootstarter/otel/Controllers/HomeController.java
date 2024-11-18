@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HomeController {
-    String msg = "otel-sdk-examples-java-sdk";
+    String msg = "otel-sdk-examples-java-springbootstarter";
 
     @GetMapping("/")
     public String index() {
