@@ -8,6 +8,5 @@
 
 **Production / deploying to Container Apps**:
 1. Build the image - deploy this to a container registry like Azure Container Registry. **NOTE**: Don't  set `NODE_ENV` to `dev`.
+2. Create a Container App with [OpenTelemetry enabled](https://learn.microsoft.com/en-us/azure/container-apps/opentelemetry-agents?tabs=azure-cli#environment-variables) enabled on the environment. Use the newly built image.
 
-
-Limitations for the codeless agent are called out [here](https://opentelemetry.io/docs/zero-code/js/#configuring-the-module)
