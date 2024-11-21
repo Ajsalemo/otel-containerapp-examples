@@ -3,14 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace sdk.Controllers;
 
-public class RollDiceController : ControllerBase
+public class RollDiceController(ILogger<RollDiceController> logger) : ControllerBase
 {
+    private ILogger<RollDiceController> logger = logger;
+
     [HttpGet("/rolldice")]
     public string Get()
     {
-        using ILoggerFactory factory = LoggerFactory.Create(builder => builder.AddConsole());
-        ILogger logger = factory.CreateLogger<Program>();
-
         static int RollDice()
         {
             return Random.Shared.Next(1, 7);

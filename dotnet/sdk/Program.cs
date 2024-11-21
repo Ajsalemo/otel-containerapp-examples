@@ -2,11 +2,18 @@ using OpenTelemetry.Logs;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
+using OpenTelemetry.Exporter;
+using OpenTelemetry.Instrumentation.AspNetCore;
+using sdk.Otel;
 
 var builder = WebApplication.CreateBuilder(args);
+var instrumentation = new Instrumentation();
 
 Uri otlpEndpointName = new(System.Environment.GetEnvironmentVariable("OTEL_EXPORTER_OTLP_ENDPOINT") ?? "http://localhost:4317");
 string serviceName = System.Environment.GetEnvironmentVariable("OTEL_SERVICE_NAME") ?? "otel-examples-dotnet-sdk";
+
+builder.Services.AddSingleton<Instrumentation>();
+
 // Write OTEL telemetry to console in development environments
 if (builder.Environment.IsDevelopment())
 {
@@ -46,12 +53,19 @@ else
     builder.Services.AddOpenTelemetry()
           .ConfigureResource(resource => resource.AddService(serviceName))
           .WithTracing(tracing => tracing
+              .AddSource(instrumentation.ActivitySourceName)
+              .SetSampler(new AlwaysOnSampler())
               .AddAspNetCoreInstrumentation()
+              .AddHttpClientInstrumentation()
               .AddOtlpExporter(options =>
                     {
                         options.Endpoint = otlpEndpointName;
                     }))
           .WithMetrics(metrics => metrics
+              .AddMeter(instrumentation.MeterName)
+              .SetExemplarFilter(ExemplarFilterType.TraceBased)
+              .AddRuntimeInstrumentation()
+              .AddHttpClientInstrumentation()
               .AddAspNetCoreInstrumentation()
               .AddOtlpExporter(options =>
                     {
