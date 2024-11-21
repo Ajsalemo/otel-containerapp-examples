@@ -2,8 +2,6 @@ using OpenTelemetry.Logs;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
-using OpenTelemetry.Exporter;
-using OpenTelemetry.Instrumentation.AspNetCore;
 using sdk.Otel;
 
 var builder = WebApplication.CreateBuilder(args);
