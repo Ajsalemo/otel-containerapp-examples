@@ -15,6 +15,7 @@ public class ReqHeadersController : ControllerBase
         foreach (var header in Request.Headers)
         {
             reqDictionary.Add(header.Key, header.Value.ToString() ?? "");
+            logger.LogInformation("{headerKey}: {headerValue}", header.Key, header.Value);
         }
 
         var jsonReqDictionary = JsonSerializer.Serialize(reqDictionary);
