@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ao8asDhUL24=",
+  "dgSpecHash": "stQ2T1eKOVc=",
   "success": true,
   "projectFilePath": "/home/ajsalemo/code/otel-containerapp-examples/dotnet/sdk/sdk.csproj",
   "expectedPackageFiles": [
+    "/home/ajsalemo/.nuget/packages/google.protobuf/3.22.5/google.protobuf.3.22.5.nupkg.sha512",
+    "/home/ajsalemo/.nuget/packages/grpc.core.api/2.52.0/grpc.core.api.2.52.0.nupkg.sha512",
+    "/home/ajsalemo/.nuget/packages/grpc.net.client/2.52.0/grpc.net.client.2.52.0.nupkg.sha512",
+    "/home/ajsalemo/.nuget/packages/grpc.net.common/2.52.0/grpc.net.common.2.52.0.nupkg.sha512",
     "/home/ajsalemo/.nuget/packages/microsoft.aspnetcore.openapi/8.0.11/microsoft.aspnetcore.openapi.8.0.11.nupkg.sha512",
     "/home/ajsalemo/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/ajsalemo/.nuget/packages/microsoft.extensions.configuration/9.0.0/microsoft.extensions.configuration.9.0.0.nupkg.sha512",
@@ -25,6 +29,7 @@
     "/home/ajsalemo/.nuget/packages/opentelemetry.api/1.10.0/opentelemetry.api.1.10.0.nupkg.sha512",
     "/home/ajsalemo/.nuget/packages/opentelemetry.api.providerbuilderextensions/1.10.0/opentelemetry.api.providerbuilderextensions.1.10.0.nupkg.sha512",
     "/home/ajsalemo/.nuget/packages/opentelemetry.exporter.console/1.10.0/opentelemetry.exporter.console.1.10.0.nupkg.sha512",
+    "/home/ajsalemo/.nuget/packages/opentelemetry.exporter.opentelemetryprotocol/1.10.0/opentelemetry.exporter.opentelemetryprotocol.1.10.0.nupkg.sha512",
     "/home/ajsalemo/.nuget/packages/opentelemetry.extensions.hosting/1.10.0/opentelemetry.extensions.hosting.1.10.0.nupkg.sha512",
     "/home/ajsalemo/.nuget/packages/opentelemetry.instrumentation.aspnetcore/1.9.0/opentelemetry.instrumentation.aspnetcore.1.9.0.nupkg.sha512",
     "/home/ajsalemo/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
@@ -32,6 +37,7 @@
     "/home/ajsalemo/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.6.2/swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",
     "/home/ajsalemo/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.6.2/swashbuckle.aspnetcore.swaggerui.6.6.2.nupkg.sha512",
     "/home/ajsalemo/.nuget/packages/system.diagnostics.diagnosticsource/9.0.0/system.diagnostics.diagnosticsource.9.0.0.nupkg.sha512",
+    "/home/ajsalemo/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/home/ajsalemo/.nuget/packages/system.text.json/8.0.5/system.text.json.8.0.5.nupkg.sha512"
   ],
   "logs": []
