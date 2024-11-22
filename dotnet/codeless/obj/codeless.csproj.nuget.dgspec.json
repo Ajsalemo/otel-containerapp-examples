@@ -10,11 +10,11 @@
         "projectUniqueName": "/home/ajsalemo/code/otel-containerapp-examples/dotnet/codeless/codeless.csproj",
         "projectName": "codeless",
         "projectPath": "/home/ajsalemo/code/otel-containerapp-examples/dotnet/codeless/codeless.csproj",
-        "packagesPath": "/home/ajsalemo/.nuget/packages/",
+        "packagesPath": "/root/.nuget/packages/",
         "outputPath": "/home/ajsalemo/code/otel-containerapp-examples/dotnet/codeless/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/ajsalemo/.nuget/NuGet/NuGet.Config"
+          "/root/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -43,9 +43,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.67.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.11, )"
+            },
+            "OpenTelemetry.AutoInstrumentation": {
+              "target": "Package",
+              "version": "[1.9.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

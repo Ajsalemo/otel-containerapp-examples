@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("codeless")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+35fa7af9aad5f033ca584e7fc17a5a9660e53343")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38999bdb4182e48902b3371172da7cae4cdf2f68")]
 [assembly: System.Reflection.AssemblyProductAttribute("codeless")]
 [assembly: System.Reflection.AssemblyTitleAttribute("codeless")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
