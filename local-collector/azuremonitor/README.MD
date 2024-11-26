@@ -8,6 +8,7 @@ This example uses Docker Compose to create run 3 containers:
 Usage:
 1. Run `export APPLICATIONINSIGHTS_CONNECTION_STRING="your_ai_connection_string"` from the terminal
 2. Run `docker-compose up -d`
-3. Navigate to your Application Insights instance on Azure to view telemetry
+3. Make requests to the application
+4. Navigate to your Application Insights instance on Azure to view telemetry
 
 ![App Insights telemetry](assets/image.png)

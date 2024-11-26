@@ -8,6 +8,7 @@ This example uses Docker Compose to create run 3 containers:
 Usage:
 1. Run `export DD_API_KEY="your_datadog_api_key"` from the terminal
 2. Run `docker-compose up -d`
-3. Navigate to your Data Dog instance on datadoghq to view telemetry
+3. Make requests to the application
+4. Navigate to your Data Dog instance on datadoghq to view telemetry
 
 ![DataDog telemetry](assets/image.png)

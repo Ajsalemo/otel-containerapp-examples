@@ -8,6 +8,7 @@ This example uses Docker Compose to create run 3 containers:
 
 Usage:
 1. Run `docker-compose up -d` from within this project folder relative to `docker-compose.yml`
-2. Navigate to `localhost:9411` to view traces in Zipkin
+2. Make requests to the application
+3. Navigate to `localhost:9411` to view traces in Zipkin
 
 ![Zipkin traces](./assets/image.png)

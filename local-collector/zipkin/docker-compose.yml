@@ -34,3 +34,4 @@ services:
       OTEL_PYTHON_LOG_LEVEL: "info"
     ports:
       -  "8000:8000"
+
