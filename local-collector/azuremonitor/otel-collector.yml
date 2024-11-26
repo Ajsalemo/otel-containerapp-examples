@@ -1,0 +1,27 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+
+processors:
+  batch:
+
+# See https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/exporter/azuremonitorexporter/README.md
+# This setup expects the environment variable `APPLICATIONINSIGHTS_CONNECTION_STRING` to be set with the connection string
+# Otherwise, manually pass in the connectionstring with the `connection_string` field below
+exporters:
+  azuremonitor:
+
+extensions:
+  health_check:
+  pprof:
+  zpages:
+
+service:
+  extensions: [health_check, pprof, zpages]
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [azuremonitor]
