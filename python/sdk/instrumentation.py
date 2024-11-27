@@ -72,6 +72,7 @@ def initialize_otel_logging():
 
     # Attach OTLP handler to root logger
     logging.getLogger().addHandler(handler)
+    logging.getLogger().addHandler(logging.StreamHandler())
     logging.basicConfig(level=logging.INFO)
 
     logging.getLogger('instrumentation').setLevel(logging.INFO)
