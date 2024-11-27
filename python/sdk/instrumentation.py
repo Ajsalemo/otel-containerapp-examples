@@ -9,7 +9,6 @@ from opentelemetry.exporter.otlp.proto.grpc.metric_exporter import \
     OTLPMetricExporter
 from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import \
     OTLPSpanExporter
-from opentelemetry.instrumentation.flask import FlaskInstrumentor
 from opentelemetry.sdk._logs import LoggerProvider, LoggingHandler
 from opentelemetry.sdk._logs.export import (BatchLogRecordProcessor,
                                             ConsoleLogExporter)
