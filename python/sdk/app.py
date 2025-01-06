@@ -1,3 +1,4 @@
+import logging
 from instrumentation import initialize_instrumentation, initialize_otel_logging
 from random import randint
 

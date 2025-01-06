@@ -68,13 +68,14 @@ def initialize_otel_logging():
         exporter = OTLPLogExporter(insecure=True)
 
     logger_provider.add_log_record_processor(BatchLogRecordProcessor(exporter))
-    handler = LoggingHandler(level=logging.NOTSET, logger_provider=logger_provider)
+    handler = LoggingHandler(level=logging.DEBUG, logger_provider=logger_provider)
 
     # Attach OTLP handler to root logger
     logging.getLogger().addHandler(handler)
-    logging.basicConfig(level=logging.INFO)
+    logging.getLogger().addHandler(logging.StreamHandler())
+    logging.basicConfig(level=logging.DEBUG)
 
-    logging.getLogger('instrumentation').setLevel(logging.INFO)
+    logging.getLogger('instrumentation').setLevel(logging.DEBUG)
     app_logger = logging.getLogger('instrumentation')
     app_logger.info("Logging initialized")
 

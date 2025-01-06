@@ -1,5 +1,5 @@
 # otel-sdk-examples-python-sdk
-This application is configured to use ['zero code instrumentation'](https://opentelemetry.io/docs/zero-code/python/configuration/)
+This application is configured to use the [OpenTelemetry Python SDK](https://opentelemetry.io/docs/languages/python/)
 
 **Local development**:
 1. Build and run the image

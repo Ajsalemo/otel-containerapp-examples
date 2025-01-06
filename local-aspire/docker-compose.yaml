@@ -1,0 +1,25 @@
+services:
+  aspire:
+    image: mcr.microsoft.com/dotnet/aspire-dashboard:9.0
+    restart: always
+    ports:
+    - "18888:18888" # Aspire dashboard UI
+    - "4317:18889" # Map the host port 4317 to the container port 18889 to recieve the OTLP data from client applications
+  python:
+    image: otel-sdk-examples-python-sdk:latest
+    build:
+      context: ../python/codeless
+    environment:
+      # Change this endpoint as needed
+      # On Container Apps, this is automatically injected when Aspire is used, or, when OpenTelemetry is set up. It shouldn't be overriden in those cases
+      OTEL_EXPORTER_OTLP_ENDPOINT: "http://host.docker.internal:4317"
+      OTEL_EXPORTER_OTLP_PROTOCOL: "grpc"
+      OTEL_SERVICE_NAME: "otel-sdk-examples-python-sdk"
+      OTEL_TRACES_EXPORTER: "otlp"
+      OTEL_METRICS_EXPORTER: "none"
+      OTEL_LOGS_EXPORTER: "none"
+      OTEL_PYTHON_LOGGING_AUTO_INSTRUMENTATION_ENABLED: true
+      OTEL_PYTHON_LOG_LEVEL: "info"
+    ports:
+      -  "8000:8000"
+

@@ -1,0 +1,6 @@
+@sdk_HostAddress = http://localhost:5163
+
+GET {{sdk_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
