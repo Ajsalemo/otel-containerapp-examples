@@ -16,12 +16,7 @@ RUN chmod 777 -R /var/www/html/storage/ && \
     a2enmod rewrite && \
     apt-get update -y && \
     apt-get install -y libzip-dev git && \
-<<<<<<< HEAD
-    pecl install opentelemetry && \
-    composer require open-telemetry/sdk open-telemetry/opentelemetry-auto-slim monolog/monolog open-telemetry/exporter-otlp open-telemetry/opentelemetry-logger-monolog && \
-=======
     MAKEFLAGS="-j $(nproc)" pecl install grpc opentelemetry && \
->>>>>>> 0c5a96efb50e95a6b41c3f5ac688605121df7479
     composer install --prefer-dist --no-dev --optimize-autoloader --no-interaction && \
     service apache2 restart
 

@@ -13,6 +13,8 @@ WORKDIR /usr/src/app
 
 COPY --from=build /usr/src/app .
 
+RUN chmod +x /usr/src/app/init_container.sh
+
 EXPOSE 3000
 
 ENTRYPOINT [ "/usr/src/app/init_container.sh" ] 

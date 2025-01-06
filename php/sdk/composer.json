@@ -7,9 +7,6 @@
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.9",
-<<<<<<< HEAD
-        "laravel/tinker": "^2.9"
-=======
         "laravel/tinker": "^2.9",
         "monolog/monolog": "*",
         "open-telemetry/api": "^1.1",
@@ -21,7 +18,6 @@
         "open-telemetry/sdk": "*",
         "open-telemetry/transport-grpc": "*",
         "php-http/guzzle7-adapter": "*"
->>>>>>> 0c5a96efb50e95a6b41c3f5ac688605121df7479
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -77,12 +73,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-<<<<<<< HEAD
-            "php-http/discovery": true
-=======
             "php-http/discovery": true,
             "tbachert/spi": true
->>>>>>> 0c5a96efb50e95a6b41c3f5ac688605121df7479
         }
     },
     "minimum-stability": "stable",
