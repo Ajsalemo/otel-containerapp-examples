@@ -1,25 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-use Monolog\Logger;
-use Illuminate\Support\Facades\Route;
-use OpenTelemetry\API\Globals;
-use OpenTelemetry\Contrib\Logs\Monolog\Handler;
-use OpenTelemetry\Contrib\Grpc\GrpcTransportFactory;
-use OpenTelemetry\Contrib\Otlp\OtlpUtil;
-use Psr\Log\LogLevel;
-
-$tracer = Globals::tracerProvider()->getTracer('laravel-tracer');
-$loggerProvider = Globals::loggerProvider();
-$handler = new Handler(
-    $loggerProvider,
-    LogLevel::INFO
-);
-$monolog = new Logger('otel-php-monolog', [$handler]);
-
-Route::get('/', function () use ($monolog) {
-    $monolog->info('root path', ['message' => 'root path']);
-=======
 require __DIR__ . '/../otel/instrumentation.php';
 
 use OpenTelemetry\API\Logs\Severity;
@@ -81,37 +61,10 @@ Route::get('/', function () use ($logger, $metrics, $tracer) {
 
     $metrics->forceFlush();
     $span->end();   
->>>>>>> 0c5a96efb50e95a6b41c3f5ac688605121df7479
 
     return view('welcome');
 });
 
-<<<<<<< HEAD
-Route::get('/api/reqheaders', function () use ($monolog) {
-    $headers = request()->headers->all();
-
-    $monolog->info('request headers', ['result' => $headers]);
-    return response()->json([
-        'headers' => $headers
-    ]); 
-});
-
-Route::get('/rolldice', function () use ($tracer, $monolog) {
-    $span = $tracer
-        ->spanBuilder('manual-span')
-        ->startSpan();
-    $result = random_int(1,6);
-
-    $span
-        ->addEvent('rolled dice', ['result' => $result])
-        ->end();
-
-    $monolog->info('dice rolled', ['result' => $result]);
-
-    return response()->json([
-        'roll' => $result
-    ]); 
-=======
 Route::get('/api/reqheaders', function () use ($logger, $metrics, $tracer) {
     $headers = request()->headers->all();
     $trace = $tracer->getTracer(
@@ -212,5 +165,4 @@ Route::get('/rolldice', function () use ($tracer, $logger, $metrics) {
     return response()->json([
         'roll' => $result
     ]);
->>>>>>> 0c5a96efb50e95a6b41c3f5ac688605121df7479
 });

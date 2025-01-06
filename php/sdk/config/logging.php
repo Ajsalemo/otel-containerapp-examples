@@ -54,11 +54,7 @@ return [
 
         'stack' => [
             'driver' => 'stack',
-<<<<<<< HEAD
-            'channels' => explode(',', env('LOG_STACK', 'single')),
-=======
             'channels' => explode(',', env('LOG_STACK', 'stdout,stderr,otel')),
->>>>>>> 0c5a96efb50e95a6b41c3f5ac688605121df7479
             'ignore_exceptions' => false,
         ],
 
@@ -93,11 +89,7 @@ return [
             'handler_with' => [
                 'host' => env('PAPERTRAIL_URL'),
                 'port' => env('PAPERTRAIL_PORT'),
-<<<<<<< HEAD
-                'connectionString' => 'tls://'.env('PAPERTRAIL_URL').':'.env('PAPERTRAIL_PORT'),
-=======
                 'connectionString' => 'tls://' . env('PAPERTRAIL_URL') . ':' . env('PAPERTRAIL_PORT'),
->>>>>>> 0c5a96efb50e95a6b41c3f5ac688605121df7479
             ],
             'processors' => [PsrLogMessageProcessor::class],
         ],
@@ -113,8 +105,6 @@ return [
             'processors' => [PsrLogMessageProcessor::class],
         ],
 
-<<<<<<< HEAD
-=======
         'stdout' => [
             'driver' => 'monolog',
             'handler' => \Monolog\Handler\FilterHandler::class,
@@ -126,7 +116,6 @@ return [
             'processors' => [PsrLogMessageProcessor::class],
         ],
 
->>>>>>> 0c5a96efb50e95a6b41c3f5ac688605121df7479
         'syslog' => [
             'driver' => 'syslog',
             'level' => env('LOG_LEVEL', 'debug'),
