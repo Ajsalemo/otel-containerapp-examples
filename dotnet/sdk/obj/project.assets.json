@@ -1986,24 +1986,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ansalemo\\.nuget\\packages\\": {}
+    "/home/ajsalemo/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ansalemo\\Documents\\Code\\otel-sdk-examples\\dotnet\\sdk\\sdk.csproj",
+      "projectUniqueName": "/home/ajsalemo/code/otel-containerapp-examples/dotnet/sdk/sdk.csproj",
       "projectName": "sdk",
-      "projectPath": "C:\\Users\\ansalemo\\Documents\\Code\\otel-sdk-examples\\dotnet\\sdk\\sdk.csproj",
-      "packagesPath": "C:\\Users\\ansalemo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ansalemo\\Documents\\Code\\otel-sdk-examples\\dotnet\\sdk\\obj\\",
+      "projectPath": "/home/ajsalemo/code/otel-containerapp-examples/dotnet/sdk/sdk.csproj",
+      "packagesPath": "/home/ajsalemo/.nuget/packages/",
+      "outputPath": "/home/ajsalemo/code/otel-containerapp-examples/dotnet/sdk/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ansalemo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/ajsalemo/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "/usr/lib/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2021,7 +2022,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -2071,6 +2073,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[8.0.22, 8.0.22]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -2079,7 +2095,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.307/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
