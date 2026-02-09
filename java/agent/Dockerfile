@@ -4,7 +4,7 @@ COPY . /usr/src/app
 
 RUN mvn -f /usr/src/app/pom.xml clean package -DskipTests
 
-FROM eclipse-temurin:21.0.5_11-jdk-jammy
+FROM eclipse-temurin:22.0.2_9-jdk-jammy
 WORKDIR /usr/src/app
 
 COPY --from=build /usr/src/app/target/sdk-0.0.1-SNAPSHOT.jar sdk-0.0.1-SNAPSHOT.jar
