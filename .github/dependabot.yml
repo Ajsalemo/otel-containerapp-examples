@@ -96,22 +96,22 @@ updates:
       interval: "weekly"
 
   - package-ecosystem: "pip" 
-    directory: "/pip/codeless" 
+    directory: "/python/codeless" 
     schedule:
       interval: "weekly"
 
   - package-ecosystem: "docker"
-    directory: "/pip/codeless"
+    directory: "/python/codeless"
     schedule:
       interval: "weekly"
 
   - package-ecosystem: "pip" 
-    directory: "/pip/sdk" 
+    directory: "/python/sdk" 
     schedule:
       interval: "weekly"
 
   - package-ecosystem: "docker"
-    directory: "/pip/sdk"
+    directory: "/python/sdk"
     schedule:
       interval: "weekly"
 
