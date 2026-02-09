@@ -121,6 +121,16 @@ updates:
       interval: "weekly"
 
   - package-ecosystem: "docker-compose"
-    directory: "/local-collector"
+    directory: "/local-collector/azure-monitor"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker-compose"
+    directory: "/local-collector/datadog"
+    schedule:
+      interval: "weekly"
+
+  - package-ecosystem: "docker-compose"
+    directory: "/local-collector/zipkin"
     schedule:
       interval: "weekly"
