@@ -8,7 +8,6 @@ on:
     # match main branch
     branches:
       - main
-      - 'dependabot/**'
 
   workflow_dispatch:
 
