@@ -1,7 +1,7 @@
-FROM composer:2.8.2 as build
+FROM composer:2.9.5 as build
 COPY . /app/
 
-FROM php:8.3.12-apache-bookworm as production
+FROM php:8.5.2-apache-bookworm as production
 
 COPY --from=build /app /var/www/html
 COPY --from=build /usr/bin/composer /usr/local/bin/composer
