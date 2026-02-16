@@ -5,7 +5,7 @@ Deprecated==1.2.14
 Flask==3.1.2
 googleapis-common-protos==1.66.0
 grpcio==1.67.1
-gunicorn==23.0.0
+gunicorn==25.1.0
 importlib_metadata==8.5.0
 itsdangerous==2.2.0
 Jinja2==3.1.4
