@@ -5,7 +5,7 @@
     "@opentelemetry/auto-instrumentations-node": "^0.69.0",
     "@opentelemetry/exporter-logs-otlp-grpc": "^0.211.0",
     "@opentelemetry/exporter-metrics-otlp-grpc": "^0.212.0",
-    "@opentelemetry/exporter-metrics-otlp-proto": "^0.211.0",
+    "@opentelemetry/exporter-metrics-otlp-proto": "^0.212.0",
     "@opentelemetry/exporter-trace-otlp-grpc": "^0.212.0",
     "@opentelemetry/exporter-trace-otlp-proto": "^0.212.0",
     "@opentelemetry/sdk-logs": "^0.212.0",
