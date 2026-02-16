@@ -2817,16 +2817,16 @@
         },
         {
             "name": "open-telemetry/exporter-otlp",
-            "version": "1.1.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/exporter-otlp.git",
-                "reference": "9b6de12204f25f8ab9540b46d6e7b5151897ce18"
+                "reference": "283a0d66522f2adc6d8d7debfd7686be91c282be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/exporter-otlp/zipball/9b6de12204f25f8ab9540b46d6e7b5151897ce18",
-                "reference": "9b6de12204f25f8ab9540b46d6e7b5151897ce18",
+                "url": "https://api.github.com/repos/opentelemetry-php/exporter-otlp/zipball/283a0d66522f2adc6d8d7debfd7686be91c282be",
+                "reference": "283a0d66522f2adc6d8d7debfd7686be91c282be",
                 "shasum": ""
             },
             "require": {
@@ -2873,11 +2873,11 @@
             ],
             "support": {
                 "chat": "https://app.slack.com/client/T08PSQ7BQ/C01NFPCV44V",
-                "docs": "https://opentelemetry.io/docs/php",
+                "docs": "https://opentelemetry.io/docs/languages/php",
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2024-04-30T18:28:30+00:00"
+            "time": "2026-02-05T09:44:52+00:00"
         },
         {
             "name": "open-telemetry/exporter-zipkin",
