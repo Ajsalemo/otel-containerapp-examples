@@ -24,7 +24,7 @@ opentelemetry-instrumentation-sqlite3==0.60b1
 opentelemetry-instrumentation-threading==0.49b1
 opentelemetry-instrumentation-urllib==0.60b1
 opentelemetry-instrumentation-wsgi==0.60b1
-opentelemetry-proto==1.28.1
+opentelemetry-proto==1.39.1
 opentelemetry-sdk==1.39.1
 opentelemetry-semantic-conventions==0.60b1
 opentelemetry-util-http==0.49b1
