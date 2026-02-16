@@ -19,7 +19,7 @@ opentelemetry-instrumentation-asyncio==0.49b1
 opentelemetry-instrumentation-dbapi==0.60b1
 opentelemetry-instrumentation-flask==0.49b1
 opentelemetry-instrumentation-jinja2==0.49b1
-opentelemetry-instrumentation-logging==0.49b1
+opentelemetry-instrumentation-logging==0.60b1
 opentelemetry-instrumentation-sqlite3==0.60b1
 opentelemetry-instrumentation-threading==0.49b1
 opentelemetry-instrumentation-urllib==0.49b1
