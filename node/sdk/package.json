@@ -12,7 +12,7 @@
     "@opentelemetry/sdk-metrics": "^2.5.1",
     "@opentelemetry/sdk-node": "^0.212.0",
     "@opentelemetry/sdk-trace-node": "^2.5.1",
-    "express": "^4.19.2"
+    "express": "^5.2.1"
   },
   "scripts": {
     "start": "node server.js"
