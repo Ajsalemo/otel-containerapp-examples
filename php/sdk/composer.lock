@@ -3324,16 +3324,16 @@
         },
         {
             "name": "open-telemetry/opentelemetry-logger-monolog",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/contrib-logger-monolog.git",
-                "reference": "e188fa2c2fba5f69f92913f8ec486398e89ef971"
+                "reference": "418b1100975374cd306d56105625f590d9abbf4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/contrib-logger-monolog/zipball/e188fa2c2fba5f69f92913f8ec486398e89ef971",
-                "reference": "e188fa2c2fba5f69f92913f8ec486398e89ef971",
+                "url": "https://api.github.com/repos/opentelemetry-php/contrib-logger-monolog/zipball/418b1100975374cd306d56105625f590d9abbf4d",
+                "reference": "418b1100975374cd306d56105625f590d9abbf4d",
                 "shasum": ""
             },
             "require": {
@@ -3377,9 +3377,9 @@
                 "otel"
             ],
             "support": {
-                "source": "https://github.com/opentelemetry-php/contrib-logger-monolog/tree/1.1.0"
+                "source": "https://github.com/opentelemetry-php/contrib-logger-monolog/tree/1.2.0"
             },
-            "time": "2025-02-25T01:30:01+00:00"
+            "time": "2026-03-24T16:33:16+00:00"
         },
         {
             "name": "open-telemetry/sdk",
