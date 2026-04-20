@@ -28,7 +28,7 @@ opentelemetry-proto==1.41.0
 opentelemetry-sdk==1.41.0
 opentelemetry-semantic-conventions==0.62b0
 opentelemetry-util-http==0.62b0
-packaging==26.0
+packaging==26.1
 protobuf==7.34.1
 typing_extensions==4.15.0
 Werkzeug==3.1.8
