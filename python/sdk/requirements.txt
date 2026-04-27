@@ -21,7 +21,7 @@ opentelemetry-instrumentation-flask==0.62b0
 opentelemetry-instrumentation-jinja2==0.62b0
 opentelemetry-instrumentation-logging==0.62b0
 opentelemetry-instrumentation-sqlite3==0.62b1
-opentelemetry-instrumentation-threading==0.62b0
+opentelemetry-instrumentation-threading==0.62b1
 opentelemetry-instrumentation-urllib==0.62b0
 opentelemetry-instrumentation-wsgi==0.62b1
 opentelemetry-proto==1.41.0
