@@ -29,7 +29,7 @@ opentelemetry-sdk==1.42.1
 opentelemetry-semantic-conventions==0.62b1
 opentelemetry-util-http==0.63b1
 packaging==26.2
-protobuf==7.35.0
+protobuf==7.35.1
 typing_extensions==4.15.0
 Werkzeug==3.1.8
 wrapt==2.2.1
