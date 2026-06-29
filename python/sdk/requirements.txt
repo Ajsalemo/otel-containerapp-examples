@@ -25,7 +25,7 @@ opentelemetry-instrumentation-threading==0.64b0
 opentelemetry-instrumentation-urllib==0.64b0
 opentelemetry-instrumentation-wsgi==0.64b0
 opentelemetry-proto==1.42.1
-opentelemetry-sdk==1.42.1
+opentelemetry-sdk==1.43.0
 opentelemetry-semantic-conventions==0.63b1
 opentelemetry-util-http==0.64b0
 packaging==26.2
