@@ -27,7 +27,7 @@ opentelemetry-instrumentation-wsgi==0.63b1
 opentelemetry-proto==1.42.1
 opentelemetry-sdk==1.42.1
 opentelemetry-semantic-conventions==0.63b1
-opentelemetry-util-http==0.63b1
+opentelemetry-util-http==0.64b0
 packaging==26.2
 protobuf==7.35.1
 typing_extensions==4.15.0
