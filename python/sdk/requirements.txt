@@ -32,5 +32,5 @@ packaging==26.2
 protobuf==7.35.1
 typing_extensions==4.15.0
 Werkzeug==3.1.8
-wrapt==2.2.1
+wrapt==2.2.2
 zipp==4.1.0
