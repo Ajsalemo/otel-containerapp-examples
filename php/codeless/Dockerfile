@@ -1,4 +1,4 @@
-FROM composer:2.11.0 as build
+FROM composer:2.11.1 as build
 COPY . /app/
 
 FROM php:8.5.12-apache-bookworm as production
